@@ -1,10 +1,10 @@
 body{
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+   padding: 0;
 }
 #logo{
-    width: 130px;
+    width: 100px;
     height: 60px;
 }
 nav{
@@ -12,7 +12,7 @@ nav{
     justify-content: space-between;
     padding: 10px 50px;
     background-color: white;
-    height: 30px;
+    height: 40px;
     /* position: fixed;
     width: 100vw; */
 }
@@ -30,17 +30,15 @@ nav button{
     border-style: solid;
     border-color: rgb(211, 176, 128);
 }
-h2{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-left: 100px;
-    padding-top: 160px;
-}
-h2 span{
+
+#special{ 
     font-family:Baskervville, serif ;
     font-size: 60px;
     color: white;
+     display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
 }
 #hero{
     background-image: url(../assets/images/cargo.jpg);
@@ -48,6 +46,9 @@ h2 span{
     height: 100vh;
     /* background: no-repeat; */
     background-size: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 .top-header{
     background-color: rgb(46, 0, 0);
@@ -71,26 +72,56 @@ h2 span{
     column-gap: 20px;
 }
 #about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 80px 120px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
+    gap: 50px;
     
    
 }
 
 #about img{
-    width: 30%;
+    width:100% ;
+    height: inherit;
     border-top-left-radius: 100px;
-    margin: 90px;
-}
-
-#about div img{
-/* margin: 70px; */
-}
-.reason{
-    margin-bottom: 80px; 
-    margin-right: 180px;
+   
     
+}
+.abtimg{
+    width: 200px;
+    height: 450px;
+}
+#redbox{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #B40000;
+    text-align: center;
+   width: 170px;
+  top: 570px;
+  bottom: 20px;
+  height: 130px;
+  left: 400px;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+}
+.about-cont{
+    position: relative;
+}
+#redbox span{
+   color: #fff;
+   font-size: 60px;
+   line-height: 1;
+   /* display: block; */
+   font-family: "Roboto", sans-serif;
+   font-weight: 900px;
+  
+}
+#redbox p{
+    color: #fff;
+    line-height: 1;
+    /* width: fit-content; */
+    font-family: "Roboto", sans-serif;
 }
