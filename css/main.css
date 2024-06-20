@@ -30,6 +30,9 @@ nav button{
     border-style: solid;
     border-color: rgb(211, 176, 128);
 }
+nav button:hover{
+    background-color: red;
+}
 
 #special{ 
     font-family:Baskervville, serif ;
@@ -39,6 +42,9 @@ nav button{
     justify-content: center;
     text-align: center;
     align-items: center; 
+}
+#number{
+    color: rgb(199, 32, 32);
 }
 #hero{
     background-image: url(../assets/images/cargo.jpg);
@@ -124,4 +130,32 @@ nav button{
     line-height: 1;
     /* width: fit-content; */
     font-family: "Roboto", sans-serif;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+}
+#arrange{
+    display: flex;
+    flex-direction: row;
+}
+#column1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#column1-a{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(122, 117, 117);
+}
+#column1-b{
+    height: 350px;
+    width: 350px;
+    background-color:rgb(122, 117, 117);
 }
